@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 import { predictSymptoms } from "./services/api";
-import MedinexLogo from "./components/MedinexLogo";
 import HomePage from "./pages/HomePage";
 import CheckerPage from "./pages/CheckerPage";
 import ResultPage from "./pages/ResultPage";
