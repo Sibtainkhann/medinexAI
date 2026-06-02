@@ -108,6 +108,7 @@ export default function App() {
         <button onClick={() => { setActivePage("home"); window.scrollTo({top:0,behavior:"smooth"}); }} style={{ display:"flex", alignItems:"center", gap:10, background:"none", border:"none", cursor:"pointer", padding:0 }}>
           <div style={{ width:38, height:38, borderRadius:10, border:"1px solid rgba(0,212,170,0.35)", boxShadow:"0 4px 20px rgba(0,212,170,0.22)", flexShrink:0, overflow:"hidden" }}>
             <img src={logo} alt="Medinex AI Logo" style={{ width:"100%", height:"100%", objectFit:"contain", display:"block" }} />
+          </div>
           <span style={{ fontFamily:"inherit", fontWeight:700, fontSize:17, letterSpacing:"-0.02em", color:"#F0F4FF" }}>
             Medinex<span style={{ color:"#00D4AA" }}> AI</span>
           </span>
