@@ -214,13 +214,13 @@ class SymptomExtractor:
                 result = process.extractOne(
                     phrase,
                     self.display_names,
-                    scorer=fuzz.token_sort_ratio,
+                    scorer=fuzz.WRatio,
                     score_cutoff=self.FUZZY_THRESHOLD,
                 )
                 if result:
                     match_name, score, _ = result
                     # For single words, require a higher threshold to reduce noise
-                    if n == 1 and score < 85:
+                    if score < 90:
                         continue
                     found.append(self.symptom_display[match_name])
                     used_indices.update(range(i, i + n))
