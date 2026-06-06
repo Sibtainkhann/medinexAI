@@ -63,7 +63,7 @@ CONTRACTIONS = {
 class SymptomExtractor:
     """Extracts symptom tokens from free-text user input."""
 
-    FUZZY_THRESHOLD = 75  # Minimum score for fuzzy matching
+    FUZZY_THRESHOLD = 90  # Minimum score for fuzzy matching
 
     def __init__(self, data_dir: str | None = None):
         """
