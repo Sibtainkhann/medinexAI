@@ -144,6 +144,9 @@ async def predict(req: PredictRequest):
         # Step 1: NLP extraction
         symptoms = _extractor.extract(req.text)
 
+        print("\nUSER INPUT:", req.text)
+        print("EXTRACTED SYMPTOMS:", symptoms)
+
         if not symptoms:
             return ErrorResponse(
                 error="No symptoms could be identified from your input. "
